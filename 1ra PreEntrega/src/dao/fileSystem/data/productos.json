@@ -1,0 +1,395 @@
+[
+    {
+      "id": 1,
+      "title": "Serum Antiedad",
+      "description": "Reduce arrugas y rejuvenece la piel.",
+      "code": "T7K9J",
+      "price": 30,
+      "status": true,
+      "stock": 432,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestro serum antiedad está formulado con ingredientes naturales para combatir los signos de envejecimiento. Hidrata profundamente y suaviza la piel, reduciendo arrugas y líneas de expresión. ¡Recupera tu juventud!"
+    },
+    {
+      "id": 2,
+      "title": "Limpiador Facial",
+      "description": "Limpieza profunda y suave.",
+      "code": "P3L2M",
+      "price": 12,
+      "status": true,
+      "stock": 1296,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Nuestro limpiador facial elimina eficazmente las impurezas y el maquillaje, dejando la piel fresca y radiante. Ideal para todo tipo de piel, incluso las sensibles."
+    },
+    {
+      "id": 3,
+      "title": "Mascarilla Revitalizante",
+      "description": "Piel renovada en minutos.",
+      "code": "W1X8R",
+      "price": 18,
+      "status": true,
+      "stock": 734,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Experimenta una piel radiante con nuestra mascarilla revitalizante. Enriquecida con vitaminas y extractos botánicos, rejuvenece y revitaliza tu cutis en minutos."
+    },
+    {
+      "id": 4,
+      "title": "Crema Hidratante SPF 30",
+      "description": "Protege y nutre tu piel.",
+      "code": "A6F4G",
+      "price": 25,
+      "status": true,
+      "stock": 1185,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Nuestra crema hidratante con SPF 30 proporciona una hidratación duradera mientras protege tu piel de los daños causados por el sol. Una fórmula ligera y no grasa que es perfecta para el uso diario."
+    },
+    {
+      "id": 5,
+      "title": "Tónico Hidratante",
+      "description": "Hidratación instantánea.",
+      "code": "H5Y7N",
+      "price": 15,
+      "status": true,
+      "stock": 598,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestro tónico hidratante refresca la piel y proporciona una hidratación instantánea. Ideal para revitalizar la piel durante el día."
+    },
+    {
+      "id": 6,
+      "title": "Crema Anti-Acné",
+      "description": "Combate las imperfecciones.",
+      "code": "D2Z1C",
+      "price": 18,
+      "status": true,
+      "stock": 1467,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Nuestra crema anti-acné está formulada para combatir las imperfecciones y los granitos, dejando la piel más clara y suave. Perfecta para pieles propensas al acné."
+    },
+    {
+      "id": 7,
+      "title": "Mascarilla de Arcilla Purificante",
+      "description": "Limpieza profunda.",
+      "code": "J9Q5V",
+      "price": 20,
+      "status": true,
+      "stock": 271,
+      "category": "facial",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Experimenta una limpieza profunda con nuestra mascarilla de arcilla purificante. Elimina el exceso de grasa y las impurezas, dejando la piel fresca y mate."
+    },
+    {
+      "id": 8,
+      "title": "Aceite de Masaje Relajante",
+      "description": "Alivia el estrés y la tensión.",
+      "code": "B4S6K",
+      "price": 15,
+      "status": true,
+      "stock": 1299,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Disfruta de un masaje relajante en casa con nuestro aceite de masaje. Su fórmula suave y aromática calma los músculos y alivia el estrés."
+    },
+    {
+      "id": 9,
+      "title": "Crema Corporal Nutritiva",
+      "description": "Piel suave y sedosa.",
+      "code": "M3R8T",
+      "price": 20,
+      "status": true,
+      "stock": 832,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestra crema corporal nutre la piel en profundidad, dejándola suave y sedosa. La fórmula enriquecida con vitaminas y manteca de karité proporciona una hidratación duradera."
+    },
+    {
+      "id": 10,
+      "title": "Exfoliante Corporal",
+      "description": "Renueva tu piel.",
+      "code": "E2W7P",
+      "price": 14,
+      "status": true,
+      "stock": 1475,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Elimina las células muertas de la piel y revela una tez más radiante con nuestro exfoliante corporal. Enriquecido con ingredientes naturales, deja la piel suave y revitalizada."
+    },
+    {
+      "id": 11,
+      "title": "Loción Reafirmante",
+      "description": "Piel firme y tonificada.",
+      "code": "Q6L4X",
+      "price": 28,
+      "status": true,
+      "stock": 306,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Nuestra loción reafirmante ayuda a mejorar la elasticidad de la piel, dejándola firme y tonificada. Ideal para áreas propensas a la flacidez."
+    },
+    {
+      "id": 12,
+      "title": "Aceite Esencial Relajante",
+      "description": "Tranquilidad en cada gota.",
+      "code": "F9H5N",
+      "price": 10,
+      "status": true,
+      "stock": 1010,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Nuestro aceite esencial relajante calma la mente y el cuerpo. Agrega unas gotas a tu baño o masaje para una experiencia relajante."
+    },
+    {
+      "id": 13,
+      "title": "Loción Corporal Reafirmante",
+      "description": "Firmeza y suavidad.",
+      "code": "Z8A1D",
+      "price": 22,
+      "status": true,
+      "stock": 560,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestra loción corporal reafirmante mejora la firmeza de la piel mientras la mantiene suave e hidratada. Un lujo para la piel."
+    },
+    {
+      "id": 14,
+      "title": "Jabón Exfoliante de Coco",
+      "description": "Suavidad tropical.",
+      "code": "L3G7V",
+      "price": 8,
+      "status": true,
+      "stock": 1342,
+      "category": "corporal",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Nuestro jabón exfoliante de coco suaviza y renueva la piel con su aroma tropical y exfoliación suave. Un placer para los sentidos."
+    },
+    {
+      "id": 15,
+      "title": "Perfume Floral Fresco",
+      "description": "Fragancia floral y refrescante.",
+      "code": "Y4J2B",
+      "price": 45,
+      "status": true,
+      "stock": 967,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Nuestra fragancia floral fresca combina notas de flores silvestres y cítricos, creando una experiencia olfativa refrescante y femenina."
+    },
+    {
+      "id": 16,
+      "title": "Eau de Parfum Seductor",
+      "description": "Atracción irresistible.",
+      "code": "K5M9R",
+      "price": 60,
+      "status": true,
+      "stock": 481,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Conviértete en el centro de atención con nuestro Eau de Parfum seductor. Una fragancia envolvente con notas de vainilla y ámbar que despierta la pasión."
+    },
+    {
+      "id": 17,
+      "title": "Perfume Masculino Clásico",
+      "description": "Elegante y atemporal.",
+      "code": "U7T6Q",
+      "price": 50,
+      "status": true,
+      "stock": 1407,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestro perfume masculino clásico es una fragancia elegante y atemporal con notas de madera y especias. Perfecto para el hombre sofisticado."
+    },
+    {
+      "id": 18,
+      "title": "Fragancia Unisex Fresca",
+      "description": "Para él y para ella.",
+      "code": "V2N8X",
+      "price": 35,
+      "status": true,
+      "stock": 1234,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Una fragancia fresca y versátil que se adapta tanto a hombres como a mujeres. Notas cítricas y herbales crean una experiencia única."
+    },
+    {
+      "id": 19,
+      "title": "Perfume de Verano",
+      "description": "Frescura estival.",
+      "code": "R1P4L",
+      "price": 55,
+      "status": true,
+      "stock": 710,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Nuestro perfume de verano captura la frescura y la vitalidad de la temporada. Notas cítricas y florales te transportarán a días soleados."
+    },
+    {
+      "id": 20,
+      "title": "Eau de Toilette Clásico",
+      "description": "Elegancia atemporal.",
+      "code": "X6Y3Z",
+      "price": 70,
+      "status": true,
+      "stock": 151,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Un clásico atemporal, nuestro Eau de Toilette ofrece una fragancia elegante y sofisticada para hombres y mujeres que aprecian la calidad."
+    },
+    {
+      "id": 21,
+      "title": "Perfume de Noche",
+      "description": "Misterio y seducción.",
+      "code": "N5W9B",
+      "price": 75,
+      "status": true,
+      "stock": 1400,
+      "category": "fragancias",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestro perfume de noche combina notas de madera y especias para una fragancia seductora y misteriosa, perfecta para las noches especiales."
+    },
+    {
+      "id": 22,
+      "title": "Base Líquida Natural",
+      "description": "Acabado impecable.",
+      "code": "C2K7H",
+      "price": 20,
+      "status": true,
+      "stock": 865,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Nuestra base líquida natural proporciona una cobertura impecable y un acabado radiante. Se mezcla fácilmente para un aspecto natural."
+    },
+    {
+      "id": 23,
+      "title": "Paleta de Sombras Nude",
+      "description": "Tonos versátiles para cualquier ocasión.",
+      "code": "S8L4J",
+      "price": 15,
+      "status": true,
+      "stock": 1374,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Crea looks impresionantes con nuestra paleta de sombras nude. Desde tonos suaves para el día hasta ahumados para la noche."
+    },
+    {
+      "id": 24,
+      "title": "Labial de Larga Duración",
+      "description": "Color duradero y vibrante.",
+      "code": "G3Q1M",
+      "price": 12,
+      "status": true,
+      "stock": 222,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Nuestro labial de larga duración ofrece un color vibrante que dura todo el día. Disponible en una variedad de tonos."
+    },
+    {
+      "id": 25,
+      "title": "Delineador de Ojos Preciso",
+      "description": "Líneas definidas con facilidad.",
+      "code": "P9T6V",
+      "price": 8,
+      "status": true,
+      "stock": 900,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto1.jpg"
+      ],
+      "description2": "Nuestro delineador de ojos preciso permite crear líneas definidas con facilidad. La fórmula resistente al agua garantiza una duración duradera."
+    },
+    {
+      "id": 26,
+      "title": "Corrector Líquido",
+      "description": "Oculta imperfecciones.",
+      "code": "W4R2N",
+      "price": 10,
+      "status": true,
+      "stock": 589,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto2.jpg"
+      ],
+      "description2": "Nuestro corrector líquido oculta imperfecciones y ojeras, dejando una piel impecable. Fácil de aplicar y mezclar."
+    },
+    {
+      "id": 27,
+      "title": "Rubor en Polvo",
+      "description": "Toque de color natural.",
+      "code": "J1X8K",
+      "price": 12,
+      "status": true,
+      "stock": 1251,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto3.jpg"
+      ],
+      "description2": "Nuestro rubor en polvo agrega un toque de color natural a tus mejillas. Fórmula duradera para un aspecto fresco durante todo el día."
+    },
+    {
+      "id": 28,
+      "title": "Pincel de Maquillaje Profesional",
+      "description": "Herramienta imprescindible.",
+      "code": "B7Y5Q",
+      "price": 15,
+      "status": true,
+      "stock": 770,
+      "category": "maquillaje",
+      "thumbnail": [
+        "https://ricardolemos22.github.io/React/assets/producto4.jpg"
+      ],
+      "description2": "Nuestro pincel de maquillaje profesional es esencial para una aplicación precisa y uniforme de tus productos favoritos. Cerdas suaves y duraderas."
+    }
+  ]
+  

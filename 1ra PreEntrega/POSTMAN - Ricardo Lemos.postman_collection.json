@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "aff4bb6c-28fd-4f39-8ef1-82ab045f9d16",
+		"name": "Proyecto Final - Ricardo Lemos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34243539"
+	},
+	"item": [
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "Get todos los productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products?limit=5&page=1&sort=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "asc"
+								},
+								{
+									"key": "category",
+									"value": "maquillaje",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "false",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get producto x ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"66788f1c291916aabac38277"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get todos los productos c/limite",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products?limit=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 29,\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [\"https://ricardolemos22.github.io/React/assets/producto2.jpg\"],\r\n    \"code\": \"ABC12354\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\",\r\n    \"description2\": \"Nuestra crema anti-acné está formulada para combatir las imperfecciones y los granitos, dejando la piel    clara y suave. Perfecta para pieles propensas al acné.\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar un producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Perfume Demo-v2\",\r\n    \"price\": 300,\r\n    \"stock\": 15\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"66788f1c291916aabac38277"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar un producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Perfume Demo234\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [],\r\n    \"code\": \"ABC123\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"66788f1c291916aabac38277"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carritos",
+			"item": [
+				{
+					"name": "Crear un carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get carrito x ID - populate",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [],\r\n    \"code\": \"ABC123\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"6678aa7334e60089bba44882"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un producto al carro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [],\r\n    \"code\": \"ABC123\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551f2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"6678aa7334e60089bba44882",
+								"product",
+								"66788e16593e618b949551f2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimino producto de un carro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [],\r\n    \"code\": \"ABC123\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"6678aa7334e60089bba44882",
+								"product",
+								"66788e16593e618b949551dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar cant fija de un producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"quantity\": 45\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"6678aa7334e60089bba44882",
+								"product",
+								"66788e16593e618b949551dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimino todos los producto de un carro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carts",
+								"6678aa7334e60089bba44882"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
