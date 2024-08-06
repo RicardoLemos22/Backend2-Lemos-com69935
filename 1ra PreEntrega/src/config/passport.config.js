@@ -94,7 +94,7 @@ export const initializePassport = () => {
                     } else {
                         const newUser = {
                             first_name: name.givenName,
-                            last_name: name.familyName,
+                            last_name: name && name.familyName ? name.familyName : ' ',
                             email: emails[0].value,
                         };
 

@@ -3,12 +3,15 @@ import { verif_InfoProducto } from "../middlewares/verif_InfoProducto.middleware
 //FS: comento los q usan JSON
 //import productManager from "../dao/fileSystem/productManager.js";
 import productDao from "../dao/mongoDB/product.dao.js";
+
+import { authorization } from "../middlewares/authorization.middleware.js";
+import { passportCall } from "../middlewares/passport.middleware.js";
 import envs from "../config/envs.config.js";
 
 const router = Router();
 
 //Recupero todos los productos
-router.get("/", async(req, res) => {
+router.get("/", passportCall("jwt"), authorization("admin"), async(req, res) => {
     try {
         const { limit, page, sort, category, status } = req.query;
         const options = {

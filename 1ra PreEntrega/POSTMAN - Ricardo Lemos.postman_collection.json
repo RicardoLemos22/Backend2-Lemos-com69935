@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "aff4bb6c-28fd-4f39-8ef1-82ab045f9d16",
-		"name": "Proyecto Final - Ricardo Lemos",
+		"_postman_id": "6aedd72c-34c1-45e2-9591-04404a9c0023",
+		"name": "1ra Entrega - Ricardo Lemos BE2-com69935",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "34243539"
 	},
@@ -15,12 +15,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products?limit=5&page=1&sort=asc",
+							"raw": "http://localhost:8082/api/products?limit=5&page=1&sort=asc",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products"
@@ -59,12 +59,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"raw": "http://localhost:8082/api/products/66788f1c291916aabac38277",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products",
@@ -80,12 +80,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/products?limit=3",
+							"raw": "http://localhost:8082/api/products?limit=3",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products"
@@ -107,7 +107,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": 29,\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [\"https://ricardolemos22.github.io/React/assets/producto2.jpg\"],\r\n    \"code\": \"ABC12354\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\",\r\n    \"description2\": \"Nuestra crema anti-acné está formulada para combatir las imperfecciones y los granitos, dejando la piel    clara y suave. Perfecta para pieles propensas al acné.\"\r\n  }",
+							"raw": "{\r\n    \"id\": 39,\r\n    \"title\": \"Perfume Demo\",\r\n    \"description\": \"Perfume citrico\",\r\n    \"price\": 500,\r\n    \"thumbnail\": [\"https://ricardolemos22.github.io/React/assets/producto2.jpg\"],\r\n    \"code\": \"ABC12354\",\r\n    \"stock\": 30,\r\n    \"category\": \"perfumes\",\r\n    \"description2\": \"Nuestra crema anti-acné está formulada para combatir las imperfecciones y los granitos, dejando la piel    clara y suave. Perfecta para pieles propensas al acné.\"\r\n  }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -115,12 +115,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/products",
+							"raw": "http://localhost:8082/api/products",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products"
@@ -144,12 +144,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"raw": "http://localhost:8082/api/products/66788f1c291916aabac38277",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products",
@@ -174,12 +174,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/products/66788f1c291916aabac38277",
+							"raw": "http://localhost:8082/api/products/66788f1c291916aabac38277",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"products",
@@ -209,12 +209,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts",
+							"raw": "http://localhost:8082/api/carts",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts"
@@ -241,12 +241,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882",
+							"raw": "http://localhost:8082/api/carts/6678aa7334e60089bba44882",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts",
@@ -271,18 +271,18 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551f2",
+							"raw": "http://localhost:8082/api/carts/66b28073466cfaee4cc4ad78/product/66788e16593e618b949551e9",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts",
-								"6678aa7334e60089bba44882",
+								"66b28073466cfaee4cc4ad78",
 								"product",
-								"66788e16593e618b949551f2"
+								"66788e16593e618b949551e9"
 							]
 						}
 					},
@@ -303,12 +303,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
+							"raw": "http://localhost:8082/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts",
@@ -335,12 +335,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
+							"raw": "http://localhost:8082/api/carts/6678aa7334e60089bba44882/product/66788e16593e618b949551dc",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts",
@@ -367,16 +367,132 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/carts/6678aa7334e60089bba44882",
+							"raw": "http://localhost:8082/api/carts/6678aa7334e60089bba44882",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8080",
+							"port": "8082",
 							"path": [
 								"api",
 								"carts",
 								"6678aa7334e60089bba44882"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"item": [
+				{
+					"name": "1-Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"richard1\",\r\n    \"last_name\": \"lemos\",\r\n    \"email\": \"correo@magico.com\",\r\n    \"password\": \"123456\",\r\n    \"age\": \"44\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/session/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"session",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2-Loguin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"correo@magico.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/session/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"session",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3-Loguin Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@magico.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/session/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"session",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4-Current",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/session/current",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"session",
+								"current"
 							]
 						}
 					},
