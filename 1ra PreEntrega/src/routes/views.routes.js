@@ -1,6 +1,7 @@
 import { Router } from "express";
 import productManager from "../dao/fileSystem/productManager.js";
 import { io } from "../app.js";
+import envs from "../config/envs.config.js";
 
 const router = Router();
 
@@ -12,7 +13,7 @@ router.get("/", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -24,7 +25,7 @@ router.get("/realtimeproducts", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -42,7 +43,7 @@ router.post("/realtimeproducts", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -60,7 +61,7 @@ router.delete("/realtimeproducts", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 

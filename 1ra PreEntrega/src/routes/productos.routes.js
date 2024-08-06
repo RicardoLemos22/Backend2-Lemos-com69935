@@ -3,41 +3,42 @@ import { verif_InfoProducto } from "../middlewares/verif_InfoProducto.middleware
 //FS: comento los q usan JSON
 //import productManager from "../dao/fileSystem/productManager.js";
 import productDao from "../dao/mongoDB/product.dao.js";
+import envs from "../config/envs.config.js";
 
 const router = Router();
 
 //Recupero todos los productos
-router.get("/", async (req, res) => {
+router.get("/", async(req, res) => {
     try {
-      const { limit, page, sort, category, status } = req.query;
-      const options = {
-        limit: limit || 10,
-        page: page || 1,
-        sort: {
-          price: sort === "asc" ? 1 : -1,
-        },
-        learn: true,
-      };
-  
-      // Si consultan por categoría
-      if (category) {
-        const products = await productDao.getAll({ category }, options);
-        return res.status(200).json({ status: "success", payload: products });
-      }
+        const { limit, page, sort, category, status } = req.query;
+        const options = {
+            limit: limit || 10,
+            page: page || 1,
+            sort: {
+                price: sort === "asc" ? 1 : -1,
+            },
+            learn: true,
+        };
 
-      if (status) {
-        const products = await productDao.getAll({ status }, options);
-        return res.status(200).json({ status: "success", payload: products });
-      }
-  
-      const products = await productDao.getAll({}, options);
-      res.status(200).json({ status: "success", payload: products });
+        // Si consultan por categoría
+        if (category) {
+            const products = await productDao.getAll({ category }, options);
+            return res.status(200).json({ status: "success", payload: products });
+        }
+
+        if (status) {
+            const products = await productDao.getAll({ status }, options);
+            return res.status(200).json({ status: "success", payload: products });
+        }
+
+        const products = await productDao.getAll({}, options);
+        res.status(200).json({ status: "success", payload: products });
 
     } catch (error) {
-      console.log(error);
-      res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        console.log(error);
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
-  });
+});
 
 
 //Recupero 1 producto x su object ID
@@ -52,7 +53,7 @@ router.get("/:pid", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -68,7 +69,7 @@ router.post("/", verif_InfoProducto, async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -78,7 +79,7 @@ router.put("/:pid", async(req, res) => {
     try {
         const { pid } = req.params;
         const body = req.body
-        //const product = await productManager.updateProduct(Number(pid), body);
+            //const product = await productManager.updateProduct(Number(pid), body);
         const product = await productDao.update(pid, body);
         if (!product) return res.status(404).json({ status: "Error", msg: "El producto del ID ingresado no se ha encontrado" });
 
@@ -86,7 +87,7 @@ router.put("/:pid", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 
@@ -104,7 +105,7 @@ router.delete("/:pid", async(req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 });
 

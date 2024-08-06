@@ -2,6 +2,7 @@ import { request, response } from "express";
 //FS: comento los q usan JSON
 //import productManager from "../dao/fileSystem/productManager.js";
 import productDao from "../dao/mongoDB/product.dao.js";
+import envs from "../config/envs.config.js";
 
 // Verifico la información del Producto
 export const verif_InfoProducto = async(req = request, res = response, next) => {
@@ -28,6 +29,6 @@ export const verif_InfoProducto = async(req = request, res = response, next) => 
 
     } catch (error) {
         console.log(error);
-        res.status(500).json({ status: "Error", msg: "Ha ocurrido un error interno del servidor." });
+        res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });
     }
 };
