@@ -1,0 +1,35 @@
+{{! mini Form para agregar o eliminar products }}
+
+<div class="container bienvenidos-container2">
+  <h2>Agregar / Eliminar Producto</h2>
+  <div class="row">
+    <div class="col-md-6">  <form class="d-flex flex-column gap-2" id="addForm">
+        <label for="title" class="form-label">Nombre del producto</label>  <input type="text" class="form-control" id="title" name="title" placeholder="Ingrese el nombre">  <label for="description" class="form-label">Descripción del producto</label>
+        <input type="text" class="form-control" id="description" name="description" placeholder="Ingrese la descripción">
+        <label for="price" class="form-label">Precio del producto</label>
+        <input type="text" class="form-control" id="price" name="price" placeholder="Ingrese el precio">
+        <button type="submit" class="btn btn-primary">Agregar producto</button>
+      </form>
+    </div>
+    <div class="col-md-6">  <form class="d-flex flex-column gap-2" id="deleteForm">
+        <label for="id" class="form-label">ID del producto</label>
+        <input type="text" class="form-control" id="id" name="id" placeholder="Ingrese el ID">
+        <button type="submit" class="btn btn-danger">Eliminar producto</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{{! Renderizo el catalogo completo }}
+<main class="container bienvenidos-container">
+    <div class="container">
+        <h2 class="main-title">"Catálogo completo de Productos"</h2>
+        <div class="row" id="productsList">
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
