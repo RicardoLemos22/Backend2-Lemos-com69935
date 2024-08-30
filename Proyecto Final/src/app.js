@@ -16,6 +16,9 @@ import passport from "passport";
 import { initializePassport } from "./config/passport.config.js";
 import cookieParser from "cookie-parser";
 
+////Backend2 - 2da entrega
+import cors from "cors";
+
 const app = express();
 
 conectarMongoDB();
@@ -30,6 +33,7 @@ app.engine("handlebars", handlebars.engine());
 app.set("views", __dirname + "/views");
 app.set("view engine", "handlebars");
 
+
 app.use(cookieParser());
 app.use(
     session({
@@ -38,6 +42,11 @@ app.use(
         saveUninitialized: true, // Guarda la session
     })
 );
+
+
+//Backend1 - 2da entrega
+app.use(cors());
+
 
 initializePassport();
 app.use(passport.initialize());

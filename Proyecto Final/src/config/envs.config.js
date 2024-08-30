@@ -11,4 +11,5 @@ export default {
     SECRET_CODE: process.env.SECRET_CODE,
     ERROR500: "Internal Server Error",
     ERROR500ESP: "Ha ocurrido un error interno del servidor."
+
 };

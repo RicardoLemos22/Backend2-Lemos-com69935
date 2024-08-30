@@ -6,8 +6,10 @@ import local from "passport-local";
 import passportCustom from "passport-custom";
 
 // Importo estrutura de datos
-import cartDao from "../dao/mongoDB/cart.dao.js";
-import userDao from "../dao/mongoDB/user.dao.js";
+// import cartDao from "../dao/mongoDB/cart.dao.js";
+// import userDao from "../dao/mongoDB/user.dao.js";
+import cartRepository from "../persistence/mongoDB/cart.repository.js";
+import userRepository from "../persistence/mongoDB/user.repository.js";
 
 // Importo funciones de repositorio
 import { cookieExtractor } from "../utils/cookieExtractor.js";
@@ -31,11 +33,13 @@ export const initializePassport = () => {
         new LocalStrategy({ passReqToCallback: true, usernameField: "email" }, async(req, username, password, done) => {
             try {
                 const { first_name, last_name, age } = req.body;
-                const user = await userDao.getByEmail(username);
+                //const user = await userDao.getByEmail(username);
+                const user = await userRepository.getByEmail(username);
 
                 if (user) return done(null, false, { message: "User already exists" });
 
-                const cart = await cartDao.create();
+                //const cart = await cartDao.create();
+                const cart = await cartRepository.create();
 
                 const newUser = {
                     first_name,

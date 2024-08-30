@@ -5,17 +5,17 @@ import envs from "../config/envs.config.js";
 export const checkToken = async(req = request, res = response, next) => {
     try {
         const token = req.cookies.token;
-        if (!token) return res.status(401).json({ status: "error", msg: "Token not provided" });
+        if (!token) return res.status(401).json({ status: "Error", msg: "Token not provided" });
 
         const tokenVerify = verifyToken(token);
-        if (!tokenVerify) return res.status(401).json({ status: "error", msg: "Invalid Token" });
+        if (!tokenVerify) return res.status(401).json({ status: "Error", msg: "Invalid Token" });
 
         req.user = verifyToken;
 
         next();
 
     } catch (error) {
-        //console.log(error);
+        console.log(error);
         res.status(500).json({ status: "Error", msg: envs.ERROR500 });
     }
 };

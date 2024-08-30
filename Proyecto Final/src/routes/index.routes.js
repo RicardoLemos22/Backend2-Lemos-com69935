@@ -12,7 +12,7 @@ router.use("/session", sessionRouter)
 
 router.get("*", async(req, res) => {
     try {
-        res.status(404).json({ status: "error", msg: "Ruta no encontrada" });
+        res.status(404).json({ status: "Error", msg: "Ruta no encontrada" });
     } catch (error) {
         console.log(error);
         res.status(500).json({ status: "Error", msg: envs.ERROR500ESP });

@@ -6,8 +6,8 @@ export const conectarMongoDB = async() => {
     try {
         mongoose.connect(envs.MONGO_URL);
         console.log("Servidor local conectado al servicio MongoDB");
-    } catch (error) {
 
+    } catch (error) {
         // muestro el objeto Error completo para entender que puede fallar
         console.log(`Error: ${error}`);
 
