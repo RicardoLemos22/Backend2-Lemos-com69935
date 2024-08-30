@@ -1,4 +1,4 @@
-import { productModel } from "../models/product.model.js";
+import { productModel } from "./models/product.model.js";
 
 //Recupero todos los productos
 const getAll = async (query, options) => {
