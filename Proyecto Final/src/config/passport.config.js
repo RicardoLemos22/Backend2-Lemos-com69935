@@ -50,7 +50,7 @@ export const initializePassport = () => {
                     cart: cart._id
                 };
 
-                const userCreate = await userDao.create(newUser);
+                const userCreate = await userRepository.create(newUser);
 
                 return done(null, userCreate);
 
@@ -66,7 +66,7 @@ export const initializePassport = () => {
         "login",
         new LocalStrategy({ usernameField: "email" }, async(username, password, done) => {
             try {
-                const user = await userDao.getByEmail(username);
+                const user = await userRepository.getByEmail(username);
 
                 if (!user || !isValidPassword(user.password, password)) return done(null, false, { message: "User or email invalid" });
 
@@ -90,7 +90,7 @@ export const initializePassport = () => {
             async(accessToken, refreshToken, profile, cb) => {
                 try {
                     const { name, emails } = profile;
-                    const user = await userDao.getByEmail(emails[0].value);
+                    const user = await userRepository.getByEmail(emails[0].value);
 
                     if (user) {
                         return cb(null, user);
@@ -102,7 +102,7 @@ export const initializePassport = () => {
                             email: emails[0].value,
                         };
 
-                        const userCreate = await userDao.create(newUser);
+                        const userCreate = await userRepository.create(newUser);
                         return cb(null, userCreate);
 
                     }
@@ -141,7 +141,7 @@ export const initializePassport = () => {
                     const tokenVerify = verifyToken(token);
                     if (!tokenVerify) return done(null, false);
 
-                    const user = await userDao.getByEmail(tokenVerify.email)
+                    const user = await userRepository.getByEmail(tokenVerify.email)
                     done(null, user);
 
                 } catch (error) {
@@ -159,7 +159,7 @@ export const initializePassport = () => {
 
     passport.deserializeUser(async(id, done) => {
         try {
-            const user = await userDao.getById(id);
+            const user = await userRepository.getById(id);
             done(null, user);
         } catch (error) {
             done(error);
