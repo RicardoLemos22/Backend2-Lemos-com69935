@@ -18,7 +18,7 @@ const createCart = async(req, res) => {
 const getCartById = async(req = request, res = response) => {
     try {
         const { cid } = req.params;
-        const cart = await cartDao.getById(cid);
+        const cart = await cartServices.getCartById(cid);
 
         if (!cart) return res.status(404).json({ status: "Error", msg: "El carrito no se ha encontrado." });
         res.status(200).json({ status: "Success", payload: cart });
@@ -95,8 +95,8 @@ const purchaseCart = async(req = request, res = response) => {
             const ticketHtml = formatTicketToHtml(JSON.stringify(ticket));
             await sendEmail(req.user.email, "Envio Ticket de compra", ticketHtml );
         } catch (error) {
-            console.log(error);
-            res.status(500).json({ status: "Error", msg: envs.ERROR500 });
+            // console.log(error);
+            // res.status(500).json({ status: "Error", msg: envs.ERROR500 });
         }
 
         res.status(200).json({ status: "Success", payload: ticket });
@@ -120,7 +120,7 @@ const formatTicketToHtml = (ticketJson) => {
             <p><strong>Comprador:</strong> ${ticket.comprador}</p>
             <br/>
             <p>Gracias por tu compra.</p>
-            <p>Equipo de Soporte</p>
+            <p>Equipo de Beauty Elixir</p>
         </body>
         </html>
     `;
