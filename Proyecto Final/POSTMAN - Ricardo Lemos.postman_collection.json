@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "6aedd72c-34c1-45e2-9591-04404a9c0023",
-		"name": "1ra Entrega - Ricardo Lemos BE2-com69935",
+		"_postman_id": "944c3295-8234-45aa-9a2b-8a3e2fa8af72",
+		"name": "BE2 - PF - Ricardo Lemos - com69935",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "34243539"
 	},
@@ -241,7 +241,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/carts/6678aa7334e60089bba44882",
+							"raw": "http://localhost:8082/api/carts/66d27b38019c4b42c67e60d5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -250,7 +250,7 @@
 							"path": [
 								"api",
 								"carts",
-								"6678aa7334e60089bba44882"
+								"66d27b38019c4b42c67e60d5"
 							]
 						}
 					},
@@ -271,7 +271,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/carts/66b28073466cfaee4cc4ad78/product/66788e16593e618b949551e9",
+							"raw": "http://localhost:8082/api/carts/66d27b38019c4b42c67e60d5/product/66788e16593e618b949551ee",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -280,9 +280,9 @@
 							"path": [
 								"api",
 								"carts",
-								"66b28073466cfaee4cc4ad78",
+								"66d27b38019c4b42c67e60d5",
 								"product",
-								"66788e16593e618b949551e9"
+								"66788e16593e618b949551ee"
 							]
 						}
 					},
@@ -381,6 +381,28 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Comprar Carro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/carts/66d27b38019c4b42c67e60d5/purchase",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"carts",
+								"66d27b38019c4b42c67e60d5",
+								"purchase"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -394,7 +416,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\": \"richard1\",\r\n    \"last_name\": \"lemos\",\r\n    \"email\": \"correo@magico.com\",\r\n    \"password\": \"123456\",\r\n    \"age\": \"44\"\r\n}",
+							"raw": "{\r\n    \"first_name\": \"Ricardo\",\r\n    \"last_name\": \"Lemos\",\r\n    \"email\": \"l_riki@hotmail.com\",\r\n    \"password\": \"123456\",\r\n    \"age\": \"44\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -424,7 +446,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"correo@magico.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"email\": \"l_riki@hotmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -454,7 +476,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"admin@magico.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"email\": \"l.riki2014@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -493,6 +515,44 @@
 								"api",
 								"session",
 								"current"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Email",
+			"item": [
+				{
+					"name": "test envio email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"l_riki@hotmail.com\",\r\n    \"subject\": \"Correo de prueba\",\r\n    \"html\": \"<div><h1>Correo de prueba</h1><h2>Hola mundo!</h2></div>\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/contact/email",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"contact",
+								"email"
 							]
 						}
 					},

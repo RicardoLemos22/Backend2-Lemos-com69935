@@ -116,7 +116,7 @@ const formatTicketToHtml = (ticketJson) => {
             <h2 style="color: #555;">Detalle de tu compra</h2>
             <p><strong>Código del ticket:</strong> ${ticket.codigo}</p>
             <p><strong>Fecha de compra:</strong> ${ticket.fecha_compra}</p>
-            <p><strong>Total:</strong> ${ticket.total}</p>
+            <p><strong>Total:</strong> $ ${ticket.total}</p>
             <p><strong>Comprador:</strong> ${ticket.comprador}</p>
             <br/>
             <p>Gracias por tu compra.</p>
