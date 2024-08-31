@@ -3,12 +3,14 @@ import productosRouter from "./productos.routes.js";
 import carrosRouter from "./carrito.routes.js";
 import sessionRouter from "./session.routes.js"
 import envs from "../config/envs.config.js";
+import contactRouter from "./contact.routes.js";
 
 const router = Router();
 
 router.use("/products", productosRouter);
 router.use("/carts", carrosRouter);
 router.use("/session", sessionRouter)
+router.use("/contact", contactRouter);
 
 router.get("*", async(req, res) => {
     try {

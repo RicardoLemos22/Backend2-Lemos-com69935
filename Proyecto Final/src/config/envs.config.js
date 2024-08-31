@@ -10,6 +10,9 @@ export default {
     PORT: process.env.PORT,
     SECRET_CODE: process.env.SECRET_CODE,
     ERROR500: "Internal Server Error",
-    ERROR500ESP: "Ha ocurrido un error interno del servidor."
-
+    ERROR500ESP: "Ha ocurrido un error interno del servidor.",
+    
+    GMAIL_PASS: process.env.GMAIL_PASS,
+    GMAIL_EMAIL: process.env.GMAIL_EMAIL
+    
 };
